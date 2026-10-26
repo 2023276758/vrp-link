@@ -1,0 +1,9 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Bank Rakyat Visitor Registration</title></head>
+<body style="font-family:sans-serif;text-align:center;padding-top:40px">Opening your invitation...
+<script>
+var FORM = "https://d7d6a9fb3a07e1dd8f14a42841c297.87.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/30/workflows/2cda66feee554949aa96255b58ee52eb/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=PvQvzUxJN5O_NygZ9x4hWnYCRPBZchluCc4bquJwWTo";
+var t = new URLSearchParams(location.search).get("i") || "";
+location.replace(FORM + (t ? "&inv=" + encodeURIComponent(t) : ""));
+</script></body></html>
